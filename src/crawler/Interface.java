@@ -150,10 +150,10 @@ public class Interface extends javax.swing.JFrame {
         Spider spider = new Spider();
         spider.Crawl(query, times, url);
         jTextArea1.append("Frequency\tLink\n");
-        for(int index=0; index<times;index++)
+        for(int index=0; index<spider.wordsFound.size();index++)
         {
             jTextArea1.append(spider.wordsFound.get(index)+"\t"+spider.linksToVisit.get(index)+"\n");
-        }
+        } 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed

@@ -158,7 +158,7 @@ public class Interface extends javax.swing.JFrame {
         try {
             URI uri= new URI(spider.linksToVisit.get(index));
             java.awt.Desktop.getDesktop().browse(uri);
-            System.out.println("Amazon opened in browser");
+            System.out.println("Opened in browser");
 
             } catch (Exception e) {
                    e.printStackTrace();
